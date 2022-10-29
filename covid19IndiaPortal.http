@@ -1,0 +1,54 @@
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+  "username": "sunil013",
+  "password": "sunil@013"
+}
+
+###
+POST http://localhost:3000/users/
+Content-Type: application/json
+
+{
+    "username":"sunil013",
+    "name":"sunil",
+    "password":"sunil@013",
+    "gender":"location",
+    "location":"vuyyuru"
+}
+
+###
+GET http://localhost:3000/states/6/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1bmlsMDEzIiwiaWF0IjoxNjU4NDc1MTgzfQ.6K6x48JG6voIEPtP6jYVdgTldcKeocTacllCbU7K_qU
+
+###
+GET http://localhost:3000/states/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1bmlsMDEzIiwiaWF0IjoxNjU4NDc1MTgzfQ.6K6x48JG6voIEPtP6jYVdgTldcKeocTacllCbU7K_qU
+
+###
+GET http://localhost:3000/districts/6/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1bmlsMDEzIiwiaWF0IjoxNjU4NDc1MTgzfQ.6K6x48JG6voIEPtP6jYVdgTldcKeocTacllCbU7K_qU
+
+###
+DELETE http://localhost:3000/districts/6/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1bmlsMDEzIiwiaWF0IjoxNjU4NDc1MTgzfQ.6K6x48JG6voIEPtP6jYVdgTldcKeocTacllCbU7K_qU
+
+###
+PUT http://localhost:3000/districts/2/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1bmlsMDEzIiwiaWF0IjoxNjU4NDc1MTgzfQ.6K6x48JG6voIEPtP6jYVdgTldcKeocTacllCbU7K_qU
+
+
+{
+  "districtName": "Nadia",
+  "stateId": 3,
+  "cases": 9628,
+  "cured": 6524,
+  "active": 3000,
+  "deaths": 104
+}
+
+###
+GET http://localhost:3000/states/6/stats/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1bmlsMDEzIiwiaWF0IjoxNjU4NDc1MTgzfQ.6K6x48JG6voIEPtP6jYVdgTldcKeocTacllCbU7K_qU
